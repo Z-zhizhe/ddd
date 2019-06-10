@@ -9,7 +9,7 @@ public class HelloController {
     public String Hello()
     {
         System.out.println("Hello,Triple2");
-        System.out.println("test");
+
         return "Hello,Triple2";
     }
 }
