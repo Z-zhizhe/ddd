@@ -35,4 +35,5 @@ public class UserController {
     {
         userService.UpdateUserData(open_id,user_name,sex,major,sdept,motto);
     }
+
 }
