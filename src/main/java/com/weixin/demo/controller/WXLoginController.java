@@ -48,22 +48,15 @@ public class WXLoginController {
         List<User>userList=userService.findByOpenid(model.getOpenid());
         //String skey=getSha1(model.getSession_key());
         String skey=shaEncode(model.getSession_key());
-        System.out.println("here");
         ReturnData data=new ReturnData();
         data.user_id=userList.get(0).getUser_id();
         data.skey=skey;
-        System.out.println("here");
-        System.out.println(data);
-        System.out.println(skey);
-        System.out.println(model.getSession_key());
-        System.out.println(data.user_id);
-        System.out.println(data.skey);
         return data;
     }
 
     public class ReturnData{
-        int user_id;
-        String skey;
+        public int user_id;
+        public String skey;
     }
 
     @RequestMapping("/userdata")
