@@ -64,8 +64,8 @@ public class UserServiceImpl implements UserService {
         userRepository.UpdataNote(user_id,note);
     }
 
-    public void UpdateUserData(@Param("user_id") int user_id,@Param("user_name") String user_name,@Param("major") String major,@Param("sex") String sex,@Param("sdept") String sdept,@Param("motto") String motto){
-        userRepository.UpdateUserData(user_id,user_name,major,sex,sdept,motto);
+    public void UpdateUserData(@Param("user_id") int user_id,@Param("user_name") String user_name,@Param("major") String major,@Param("sex") String sex,@Param("sdept") String sdept){
+        userRepository.UpdateUserData(user_id,user_name,major,sex,sdept);
     }
 
     public void UpdateMajor(@Param("user_id") int user_id,@Param("major") String major) {

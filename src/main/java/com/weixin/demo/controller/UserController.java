@@ -29,9 +29,9 @@ public class UserController {
     }
 
     @RequestMapping("/setuserdata")
-    void setuser(@Param("user_id") int user_id,String user_name,String sex,String major,String sdept,String motto)
+    void setuser(@Param("user_id") int user_id,@Param("user_name") String user_name,@Param("sex") String sex,@Param("major") String major,@Param("sdept") String sdept)
     {
-        userService.UpdateUserData(user_id,user_name,sex,major,sdept,motto);
+        userService.UpdateUserData(user_id,user_name,sex,major,sdept);
     }
 
     @RequestMapping("/setmotto")

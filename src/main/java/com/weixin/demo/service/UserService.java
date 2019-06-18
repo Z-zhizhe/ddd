@@ -22,7 +22,7 @@ public interface UserService {
 
     public void UpdataMotto(@Param("user_id") int user_id,@Param("motto") String motto);
 
-    public void UpdateUserData(@Param("user_id") int user_id,@Param("user_name") String user_name,@Param("major") String major,@Param("sex") String sex,@Param("sdept") String sdept,@Param("motto") String motto);
+    public void UpdateUserData(@Param("user_id") int user_id,@Param("user_name") String user_name,@Param("major") String major,@Param("sex") String sex,@Param("sdept") String sdept);
 
     public void UpdataNote(@Param("user_id") int user_id,@Param("note") String note);
 
