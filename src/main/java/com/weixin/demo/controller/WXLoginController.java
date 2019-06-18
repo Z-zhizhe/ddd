@@ -56,6 +56,8 @@ public class WXLoginController {
         System.out.println(data);
         System.out.println(skey);
         System.out.println(model.getSession_key());
+        System.out.println(data.user_id);
+        System.out.println(data.skey);
         return data;
     }
 
