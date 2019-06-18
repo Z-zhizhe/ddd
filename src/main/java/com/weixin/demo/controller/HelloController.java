@@ -10,7 +10,7 @@ public class HelloController {
     {
         System.out.println("Hello,Triple2");
 
-
+        System.out.println("zry");
         return "Hello,Triple2";
     }
 }
